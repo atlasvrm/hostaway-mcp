@@ -1,0 +1,46 @@
+{
+  "name": "hostaway-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Hostaway vacation rental management",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atlasvrm/hostaway-mcp.git"
+  },
+  "homepage": "https://github.com/atlasvrm/hostaway-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/atlasvrm/hostaway-mcp/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "hostaway-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build",
+    "test:api": "tsx src/test-local.ts"
+  },
+  "keywords": [
+    "mcp",
+    "hostaway",
+    "vacation-rental",
+    "property-management"
+  ],
+  "author": "Atlas Vacation Rentals",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "axios": "^1.11.0",
+    "zod": "^3.25.76",
+    "typescript": "^5.8.3",
+    "@types/node": "^24.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.1",
+    "tsx": "^4.20.3"
+  }
+}

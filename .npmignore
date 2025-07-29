@@ -1,0 +1,32 @@
+# Source files (only dist is needed)
+src/
+*.ts
+!dist/**/*.d.ts
+
+# Development files
+.env
+.env.*
+.git/
+.gitignore
+.npmignore
+.claude/
+
+# Build files
+tsconfig.json
+tsconfig.tsbuildinfo
+
+# Test files
+test-*
+*.test.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
